@@ -1,0 +1,77 @@
+body {
+    background-color: white;
+}
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.board {
+    display: grid;
+}
+
+.board {
+    width: 707px;
+    height: 606x;
+    border: 2px solid black;
+    background: rgb(0, 153, 255);
+    transform: scaleX(-1);
+    transform: scaleY(-1);
+}
+  
+.cell {
+    height: 75px;
+    width: 75px;
+    border: 1px solid black;
+    border-radius: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+}
+button {
+    height: 50px;
+    width: 75px;
+}
+.set-names {
+    height: 25px;
+    width: 100px;
+}
+.controls {
+    display: flex;
+    justify-content: space-between;
+}
+.column-button {
+    justify-content: space-evenly;
+}
+#player-two {
+    display: none;
+}
+.reset {
+    height: 75px;
+    width: 100px;
+}
+.options {
+    padding-left: 75px;
+    justify-content: center;
+    align-items: center;
+}
+.game {
+    display: flex
+}
+.custom-grid {
+    display: flex;
+    flex-direction: column;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+#win-condition {
+    width: 120px;
+}
+#width {
+    width: 75px
+}
+#height {
+    width: 75px
+}
