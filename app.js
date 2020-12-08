@@ -165,15 +165,14 @@ function checkTie(board) {
 //checks for a winner or a tie using our 4 functions
 function checkWinner(player, column, height, board) {
   let winner = "Congratulations player:" + player + " won!!"
-  if (checkTie(board)) {
-    return $('h2').text(`It's a tie!`)
-  } else
   if ( checkAbove(player, column, height, board) 
     || checkRow(player, height, board) 
     || checkBackSlashDiagonal(player, column, height, board) 
     || checkForwardSlashDiagonal(player, column, height, board)) {
       drawWinner(board, player)
       return console.log(winner)
+  } else if (checkTie(board)) {
+    return $('h2').text(`It's a tie!`)
   }
 }
 
